@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--   https://mozilla.github.io/webrtc-landing/gum_test.html -->
+  <title>gUM Test Page</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700" rel="stylesheet" type="text/css">
+
+
+
+<!--     <script type="text/javascript" src="ui_script.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <div id="main">
+    <h2><b>getUserMedia / getDisplayMedia Test Page</b></h2>
+    <p><a href="https://mozilla.github.io/webrtc-landing">Main webrtc demo page</a></p>
+
+    <div id="gum_warn" style="display: none">
+      <font color="red">
+      <h4>getUserMedia is missing!</h4>
+      This page only works when loaded loaded <a href="https://mozilla.github.io/webrtc-landing/gum_test.html">via HTTPS</a> as getUserMedia() can only be accessed via HTTPS.<br><br>
+      </font>
+    </div>
+
+    <div id="startbuttons">
+      <input value="Camera" onclick="startVideo();" type="button">
+      <input value="Microphone" onclick="startAudio();" type="button">
+      <input value="Camera &amp; microphone" onclick="startAudioVideo();" type="button">
+      <input value="Screen capture" onclick="startScreen();" type="button">
+      <br>
+      <input id="fps_range" min="0" max="120" value="0" type="range">
+      <input id="fps_number" min="0" max="120" value="0" type="number">
+    <label for="fps_number">FPS desired (0 for default)</label>
+    </div>
+    <div id="images">
+       <div id="content"></div>
+       <div id="controls"></div>
+       <div id="frames"></div>
+       <div id="fps"></div>
+    </div>
+    <div id="message"></div>
+    <div style="display: none;" id="stopbuttons">
+      <input value="Stop" onclick="stopMedia();" type="button">
+      <input value="Pause/Play" onclick="pauseMedia();" type="button">
+      <input id="snapshot" value="Snapshot" onclick="startSnapshot();" type="button">
+    </div>
+  </div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
