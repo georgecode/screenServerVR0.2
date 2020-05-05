@@ -1,3 +1,5 @@
 # dependencies
 screenServer/node_modules
 screenServer/public/Beach_Aerial.mp4
+
+screenServer/keys_ssl/serverKeys
