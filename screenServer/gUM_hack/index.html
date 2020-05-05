@@ -6,7 +6,7 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700" rel="stylesheet" type="text/css">
 
-
+<script type="text/javascript" src="livejs.js"></script>
 
 <!--     <script type="text/javascript" src="ui_script.js"></script> -->
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -15,7 +15,7 @@
 <body>
   <div id="main">
     <h2><b>getUserMedia / getDisplayMedia Test Page</b></h2>
-    <p><a href="https://mozilla.github.io/webrtc-landing">Main webrtc demo page</a></p>
+<!--     <p><a href="https://mozilla.github.io/webrtc-landing">Main webrtc demo page</a></p> -->
 
     <div id="gum_warn" style="display: none">
       <font color="red">
@@ -35,12 +35,12 @@
     <label for="fps_number">FPS desired (0 for default)</label>
     </div>
     <div id="images">
-       <div id="content"></div>
-       <div id="controls"></div>
-       <div id="frames"></div>
-       <div id="fps"></div>
+       <div id="content">##content</div>
+       <div id="controls">##controls</div>
+       <div id="frames">##frames</div>
+       <div id="fps">##fps</div>
     </div>
-    <div id="message"></div>
+    <div id="message">##message</div>
     <div style="display: none;" id="stopbuttons">
       <input value="Stop" onclick="stopMedia();" type="button">
       <input value="Pause/Play" onclick="pauseMedia();" type="button">

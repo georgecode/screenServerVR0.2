@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 
+
 app.use(express.static("gUM_hack"));
 
 // app.get('/', function(req, res) {

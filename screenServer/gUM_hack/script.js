@@ -7,19 +7,19 @@
   video.setAttribute("width", 640);
   video.setAttribute("height", 480);
 
-  const muted = document.createElement("input");
-  muted.type = "checkbox";
-  muted.checked = true;
-  muted.onclick = () => { video.muted = muted.checked; };
+  // const muted = document.createElement("input");
+  // muted.type = "checkbox";
+  // muted.checked = true;
+  // muted.onclick = () => { video.muted = muted.checked; };
 
-  const mute = document.createElement("label");
-  mute.innerHTML = "Volume mute";
-  mute.insertBefore(muted, mute.firstChild);
+  // const mute = document.createElement("label");
+  // mute.innerHTML = "Volume mute";
+  // mute.insertBefore(muted, mute.firstChild);
 
-  const snapshots = [];
+  // const snapshots = [];
 
-  const audio = document.createElement("audio");
-  audio.setAttribute("controls", true);
+  // const audio = document.createElement("audio");
+  // audio.setAttribute("controls", true);
 
   const start = document.getElementById("startbuttons");
   const stop = document.getElementById("stopbuttons");
@@ -27,7 +27,7 @@
   const message = document.getElementById("message");
   const content = document.getElementById("content");
   const frames = document.getElementById("frames");
-  const snapshot = document.getElementById("snapshot");
+  // const snapshot = document.getElementById("snapshot");
   const fps = document.getElementById("fps");
 
   const fps_range = document.getElementById("fps_range");
@@ -126,7 +126,7 @@
     start.style.display = "none";
     try {
       const stream = await navigator.mediaDevices[gum](constraints);
-      message.innerHTML = "<p>Success!</p>";
+      message.innerHTML = "<p>xxxSuccess!</p>";
       if (stream.getVideoTracks().length) {
         content.appendChild(video);
         if (stream.getAudioTracks().length) {
@@ -202,6 +202,3 @@
   //     setTimeout(captureImage, 2000);
   //   }
   // }
-
-
-
