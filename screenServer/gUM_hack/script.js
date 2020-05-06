@@ -3,6 +3,8 @@
     document.getElementById("gum_warn").style.display = "none";
   }
 
+  // process.env[‘NODE_TLS_REJECT_UNAUTHORIZED’] = 0;
+
   const video = document.createElement("video");
   video.setAttribute("width", 640);
   video.setAttribute("height", 480);
